@@ -1,0 +1,25 @@
+Backend
+NodeJS -> v10.16.1 ; NPM -> v6.9.0
+Framework 
+	Express v4.16.1 -> Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+generators -> Express Generators 
+ODM -> mongoose v5.6.10 -> 
+Middleware
+	Multer v1.4.2 -> is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files.
+		docs: https://www.npmjs.com/package/multer
+
+Frontend
+Template [https://getmdl.io/templates/index.html]
+
+
+
+ref:
+Patrones de diseño:
+https://www.todojs.com/10-patrones-de-diseno-para-node-por-felipe-polo/
+
+upload-image
+https://github.com/programmer-blog/nodejs-file-upload-with-mongodb
+
+
+esquema 
+https://github.com/jonmircha/curso-nodejs/blob/master/09ApiRESTMongo/controllers/movie-controller.js
