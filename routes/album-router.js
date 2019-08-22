@@ -4,8 +4,10 @@ const router = express.Router();
 
 router
     .get('/', AlbumController.findAll)
-    .post('/', AlbumController.save)
+    .get('/find/:albumId', AlbumController.findByAlbumId)
+    .post('/create-album', AlbumController.save)
+    .post('/add-photo', AlbumController.addPhoto)
     .delete('/delete/:id', AlbumController.deleteAlbum)
-    .delete('/delete/:albumId/:photoid', AlbumController.deletePhoto);
+    .delete('/delete/:albumId/:photoId', AlbumController.deletePhoto);
 
 module.exports = router;

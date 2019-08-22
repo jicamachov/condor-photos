@@ -9,7 +9,7 @@ const albumSchema = new Schema({
             caption: String,
             path: String, 
             createdt: Date
-        }
+        }   
     ]
 },{
     collection: 'album'
