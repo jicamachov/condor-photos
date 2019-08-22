@@ -2,9 +2,15 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const albumSchema = new Schema({
-    name: String,
+    name: {type: String, default: 'other'},
     createdt: Date,
-    photos:[{title: String, createdt: Date}]
+    photos:[
+        {
+            caption: String,
+            path: String, 
+            createdt: Date
+        }
+    ]
 },{
     collection: 'album'
 }); 
