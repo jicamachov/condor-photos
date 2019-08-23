@@ -75,15 +75,15 @@ AlbumModel.deletePhoto = (albumId, photoId, cb)=> {
        cb(album);
     });
 
-    // connection.updateOne(
-    //     {_id: albumId}, 
-    //     { $pull: { 'photos._id': photoId} },
-    //     { new: true },
-    //     (err, docs) => {
-    //         if(err) throw err;
-    //         cb(docs);
-    //     }
-    // );
+    connection.updateOne(
+        {_id: albumId}, 
+        { $pull: { 'photos._id': photoId} },
+        { new: true },
+        (err, docs) => {
+            if(err) throw err;
+            cb(docs);
+        }
+    );
 
     // connection
     //     .findByIdAndUpdate(albumId,
@@ -92,8 +92,6 @@ AlbumModel.deletePhoto = (albumId, photoId, cb)=> {
     //             if(err) throw err;
     //             cb(docs);
     // });
-
-    connection.photos.pull({_id: photoId})
 
 
 }
