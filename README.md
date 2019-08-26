@@ -16,10 +16,10 @@ Web app for Condor Labs (ET)
 ### Install API Project
 
 #### Step 1.
-1. Instalar Nodejs v10.16.3 
-2. install Git
-3. Instalar Mongodb 4.2,  Create data folder in C:\  -->  C:\data\db
-4. Instalar Yarn (recommended) or used NPM(it included in NodeJS)
+1. Install Nodejs v10.16.3 
+2. Install Git
+3. Install Mongodb 4.2,  Create data folder in C:\  -->  C:\data\db
+4. Install Yarn (recommended) or used NPM(it included in NodeJS)
 
 #### Step 2
 1. Go to route where it was installed Mongodb and access the bin folder.
