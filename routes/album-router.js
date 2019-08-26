@@ -8,6 +8,7 @@ router
     .get('/find/:albumId', AlbumController.findByAlbumId) // Access to album by _id
     .post('/create-album', AlbumController.save) // Save a album 
     .post('/add-photo', AlbumController.addPhoto) // Save photo
+    .post('/album/add-photo', AlbumController.addPhotoToAlbum) // Add photo to album
     .delete('/delete/:id', AlbumController.deleteAlbum) // Delete album
     .delete('/delete/:albumId/:photoId', AlbumController.deletePhoto); // Delete photo
 

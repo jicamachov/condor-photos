@@ -50,6 +50,24 @@ AlbumController.addPhoto = (req, res, next) => {
   });
 };
 
+AlbumController.addPhotoToAlbum = (req, res, next) => {
+   // console.log(req.body); // Objects obtained
+  // configuration object of type album 
+  const photo = {
+    caption: req.body.photo.caption,
+    createdt: req.body.photo.createdt,
+    path: req.body.photo.path
+  }
+  // Access to Model Album --> method save  
+  AlbumModel.addPhoto(req.body.albumid, photo,  (err, docs) => {
+    if (err) res.status(500).send({ data: err });
+
+    res.status(200).send({ data: docs });
+  }
+  );
+
+}
+
 // Access to Model for to get album by _id 
 AlbumController.findByAlbumId = (req, res, next) => {
   AlbumModel.findByAlbumId(req.params.albumId, (err, docs) => {
