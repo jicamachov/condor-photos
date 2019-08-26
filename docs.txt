@@ -10,7 +10,7 @@ Middleware
 
 Frontend
 Template [https://getmdl.io/templates/index.html]
-
+Design [https://material-ui.com/es/]
 
 
 ref:
@@ -23,3 +23,8 @@ https://github.com/programmer-blog/nodejs-file-upload-with-mongodb
 
 esquema 
 https://github.com/jonmircha/curso-nodejs/blob/master/09ApiRESTMongo/controllers/movie-controller.js
+
+
+
+
+bug --> al agregar una nueva foto no se puede eliminar
