@@ -4,7 +4,7 @@ const path = require('path');
 const storageEngine = multer.diskStorage({
   destination: './public/albums',
   filename: function(req, file, fn){
-    fn(null,  new Date().getTime().toString()+'-'+file.fieldname+path.extname(file.originalname));
+    fn(null, new Date().getTime().toString()+'-'+file.fieldname+path.extname(file.originalname));
   }
 });
 

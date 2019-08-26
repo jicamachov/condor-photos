@@ -2,12 +2,13 @@ const AlbumController = require('./../controllers/album-controller');
 const express = require('express');
 const router = express.Router();
 
+// Configuration routes API
 router
-    .get('/', AlbumController.findAll)
-    .get('/find/:albumId', AlbumController.findByAlbumId)
-    .post('/create-album', AlbumController.save)
-    .post('/add-photo', AlbumController.addPhoto)
-    .delete('/delete/:id', AlbumController.deleteAlbum)
-    .delete('/delete/:albumId/:photoId', AlbumController.deletePhoto);
+    .get('/', AlbumController.findAll) // Access to all albums
+    .get('/find/:albumId', AlbumController.findByAlbumId) // Access to album by _id
+    .post('/create-album', AlbumController.save) // Save a album 
+    .post('/add-photo', AlbumController.addPhoto) // Save photo
+    .delete('/delete/:id', AlbumController.deleteAlbum) // Delete album
+    .delete('/delete/:albumId/:photoId', AlbumController.deletePhoto); // Delete photo
 
 module.exports = router;

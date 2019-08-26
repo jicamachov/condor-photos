@@ -1,22 +1,24 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+// Schema Album
 const albumSchema = new Schema({
-    name: {type: String, default: 'other'},
-    createdt: Date,
+    name: {type: String, default: '__other'}, // Name Album
+    createdt: Date, // Create date album
     photos:[
         {
-            caption: String,
-            path: String, 
-            createdt: Date
+            caption: String, // Caption photo --> detail
+            path: String,  // Path img in sever
+            createdt: Date // Create date img
         }   
     ]
 },{
-    collection: 'album'
+    collection: 'album' // name collection
 }); 
 
-const AlbumModel = mongoose.model('Album', albumSchema);
+const AlbumModel = mongoose.model('Album', albumSchema); // Creating model album
 
-mongoose.connect('mongodb://localhost:27017/condorphotos', {useNewUrlParser: true});
+// Connection to mondodb local
+mongoose.connect('mongodb://localhost:27017/condorphotos', {useNewUrlParser: true}); 
 
 module.exports = AlbumModel;
