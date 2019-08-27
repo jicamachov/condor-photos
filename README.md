@@ -18,7 +18,7 @@ Web app for Condor Labs (ET)
 #### Step 1.
 1. Install Nodejs v10.16.3 
 2. Install Git
-3. Install Mongodb 4.2 then,  Create data folder in C:\, example -->  C:\data\db
+3. Install Mongodb 4.2 then,  Create data folder in C:\, example C:\data\db
 4. Install Yarn (recommended) or used NPM (it included in NodeJS)
 
 #### Step 2
