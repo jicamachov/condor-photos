@@ -26,7 +26,7 @@ Web app for Condor Labs (ET)
 2. Execute mongod and mongo
 
 #### Step 3
-1. Download project, execute in a terminal next command git clone https://github.com/jicamachov/condor-photos.git
+1. Download the project in a terminal with next command --> git clone https://github.com/jicamachov/condor-photos.git
 2. you go to root of the project and execute yarn or npm i
 
 #### Step 4
